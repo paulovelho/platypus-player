@@ -1,0 +1,106 @@
+body {
+  font-size: 0.925em;
+  padding: 3%;
+  font-style: Tahoma;
+}
+body a {
+  color: #09c;
+}
+body a:hover, body a:focus, body a:active {
+  color: #069;
+}
+span.desc {
+  color: #fff;
+  font-style: Verdana;
+  font-size: 12px;
+  padding-right: 20px;
+}
+.visually-hidden, .pcast-player button span {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Pcast Player */
+.pcast-player {
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.audio-url {
+  width: calc(100% - 37px);
+  background: #222;
+  border: 1px solid #777;
+  color: #777;
+}
+
+.pcast-player .pcast-player-controls {
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 5px;
+}
+.pcast-player-url button,
+.pcast-player-controls button {
+  background: #2a2a2a;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  padding: 5px;
+  line-height: 22px;
+  -webkit-appreance: none;
+  min-width: 32px;
+}
+.pcast-player progress {
+  height: 13px;
+  width: calc(100% - 170px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.pcast-player progress[value]::-webkit-progress-bar {
+  background-color: #555;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.pcast-player progress[value]::-webkit-progress-value {
+  background: #fff;
+}
+.pcast-player .pcast-time {
+  display: inline-block;
+  font-size: 13px;
+  padding: 0 5px;
+  text-align: center;
+  width: 4em;
+}
+.pcast-player-speed button {
+  background: #2a2a2a;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  -webkit-appreance: none;
+  height: 20px;
+}
+.pcast-rewind {
+  float: right;
+}
+.pcast-player .pcast-player-speed {
+  padding: 5px;
+  margin-left: 50px;
+}
+#pcast-speed {
+  width: 50px;
+}
+
+.pcast-player .pcast-download:hover, .pcast-player .pcast-download:focus {
+  color: #666;
+}

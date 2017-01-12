@@ -1,0 +1,39 @@
+<html>
+
+  <head>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/font-awesome.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+
+<div class="pcast-player">
+  <div class="pcast-player-url">
+    <input class="audio-url" type="text" id="url" />
+    <button class="pcast-go"><i class="fa fa-bullhorn"></i><span>Go</span></button>
+  </div>
+  <div class="pcast-player-controls">
+    <button class="pcast-play"><i class="fa fa-play"></i><span>Play</span></button>
+    <button class="pcast-pause"><i class="fa fa-pause"></i><span>Pause</span></button>
+    <span class="pcast-currenttime pcast-time">00:00</span>
+    <progress class="pcast-progress" value="0"></progress>
+    <span class="pcast-duration pcast-time">00:00</span>
+  </div>
+  <div class="pcast-player-speed">
+    <span class="desc"><i class="fa fa-tachometer"></i> speed:&nbsp;</span>
+      <button class="pcast-speed" id="pcast-speed-down"><i class="fa fa-caret-left"></i></button>
+      <button class="pcast-speed" id="pcast-speed">1x</button>
+      <button class="pcast-speed" id="pcast-speed-up"><i class="fa fa-caret-right"></i></button>
+
+      <button class="pcast-rewind"><i class="fa fa-fast-backward"></i><span>Rewind</span></button>
+
+  </div>
+  <audio id="player" src="http://music.paulovelho.com/random/Loudon%20Wainwright%20III%20-%20Therapy.mp3"></audio>
+</div>
+
+
+  </body>
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>
